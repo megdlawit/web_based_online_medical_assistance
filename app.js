@@ -45,7 +45,7 @@ app.use(methodOverride('_method'));
 //  PASSPORT CONFIGURATION //
 app.use(
   session({
-    secret: 'our final project',
+    secret: 'AlX portifolio project',
     resave: false,
     saveUninitialized: false,
   })
