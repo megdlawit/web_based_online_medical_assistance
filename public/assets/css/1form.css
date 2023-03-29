@@ -59,7 +59,7 @@ input.invalid {
 }
 
 button {
-  background-color: #356e96;
+  background-color: teal;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -84,7 +84,7 @@ p {
 
 #heading {
   text-transform: uppercase;
-  color: #356e96;
+  color: teal;
   font-weight: normal;
 }
 
@@ -135,13 +135,13 @@ p {
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 1px solid #356e96;
+  border: 1px solid teal;
   outline-width: 0;
 }
 
 #msform .action-button {
   width: 100px;
-  background: #356e96;
+  background: teal;
   font-weight: bold;
   color: white;
   border: 0 none;
@@ -154,7 +154,7 @@ p {
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-  background-color: #311b92;
+  background-color: teal;
 }
 
 #msform .action-button-previous {
@@ -184,14 +184,14 @@ p {
 
 .fs-title {
   font-size: 25px;
-  color: #356e96;
+  color: teal;
   margin-bottom: 15px;
   font-weight: normal;
   text-align: left;
 }
 
 .purple-text {
-  color: #356e96;
+  color: teal;
   font-weight: normal;
 }
 
@@ -215,7 +215,7 @@ p {
 }
 
 #progressbar .active {
-  color: #356e96;
+  color: teal;
 }
 
 #progressbar li {
@@ -273,7 +273,7 @@ p {
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-  background: #356e96;
+  background: teal;
 }
 
 .progress {
@@ -281,7 +281,7 @@ p {
 }
 
 .progress-bar {
-  background-color: #356e96;
+  background-color: teal;
 }
 
 .fit-image {
@@ -320,7 +320,7 @@ button.btn.btn-primary.dropdown-toggle {
   opacity: 0.5;
 }
 .congrats {
-  background-color: #7d16fa;
+  background-color: teal;
   color: white;
   text-align: center;
 }
@@ -338,5 +338,5 @@ button.btn.btn-primary.dropdown-toggle {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #356e96;
+  background-color: teal;
 }

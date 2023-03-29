@@ -41,7 +41,7 @@ th {
   white-space: nowrap;
 }
 td:first-child {
-  color: royalblue;
+  color: teal;
   white-space: nowrap;
 }
 p,
@@ -80,7 +80,7 @@ button {
   cursor: pointer;
 }
 button.info {
-  background: #538fcd;
+  background: teal;
   color: #fff;
 }
 .area-buttons {
