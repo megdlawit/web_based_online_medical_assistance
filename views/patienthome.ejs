@@ -2,15 +2,15 @@
 <html lang="en">
 
   <head>
-    <!--Meta Data-->
+  
     <%- include('partial/title.ejs'); %> 
     
     <% if (data.NODE_ENV == 'production') { %>
-      <!-- Production Stylesheets -->
+
       <link rel="stylesheet" href="assets/production/css/loginRegister.min.css">
 
     <% }else { %>
-      <!-- Development Stylesheets -->
+    
       <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/lib/css/fontawesome.min.css">
       <link rel="stylesheet" href="assets/lib/css/responsive.css">
@@ -26,10 +26,10 @@
   </head>
 
   <body onLoad="typeWriter()">
-    <!--Header-->
+
     <%- include('partial/header.ejs', {data: data }); %>
 
-    <!--About Start-->
+    
     <div class="about-page pt_60 pb_30">
       <div class="container">
         <div class="row">
@@ -257,14 +257,12 @@
         </div>
       </div>
     </div>
-    <!--About End-->
 
-    <!--Footer-->
     <%- include('partial/footer.ejs'); %>
 
     <script>
       var i = 0;
-      var txt = 'Welcome to our patient portal ';
+      var txt = 'Welcome to patient portal ';
       var speed = 60;
 
       function typeWriter() {
@@ -276,7 +274,6 @@
       }
     </script>
 
-    <!-- JavaScript -->
     <script defer src="assets/lib/js/jquery-3.4.1.min.js"></script>
     <script defer src="assets/lib/js/popper.min.js"></script>
     <script defer src="assets/lib/js/bootstrap.bundle.min.js"></script>
