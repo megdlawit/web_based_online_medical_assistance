@@ -2,15 +2,15 @@
 <html lang="en">
 
   <head>
-    <!--Meta Data-->
+
     <%- include('partial/title.ejs'); %>  
 
     <% if (data.NODE_ENV == 'production') { %>
-      <!-- Production Stylesheets -->
+     
       <link rel="stylesheet" href="assets/production/css/home.min.css">
 
     <% }else { %>
-      <!-- Development Stylesheets -->
+   
       <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/lib/css/fontawesome.min.css">
       <link rel="stylesheet" href="assets/lib/css/responsive.css">
@@ -29,10 +29,9 @@
 
   <body onLoad="typeWriter()">
 
-    <!--Header-->
+
     <%- include('partial/header.ejs', {data: data }); %>
 
-    <!--About Start-->
     <div class="about-area pt_60 pb_90">
       <div class="container">
         <div class="row">
@@ -51,9 +50,6 @@
         </div>
       </div>
     </div>
-    <!--About End-->
-
-    <!--Choose-Area Start-->
     <div class="choose-area pb_90">
       <div class="container">
         <div class="row">
