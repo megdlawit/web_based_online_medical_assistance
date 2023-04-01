@@ -39,7 +39,7 @@ router.get('/patienthome', isLoggedIn, (req, res) => {
   const obj1 = {};
 
   const SortPatientPromise = new Promise((resolve, reject) => {
-    // Find all appointments of the patient
+  
     Appointment.find({ PatientId: req.user._id })
       .populate('PrescriptionId')
       .exec((err, appointments) => {
@@ -54,10 +54,9 @@ router.get('/patienthome', isLoggedIn, (req, res) => {
     result.forEach((item) => {
       const obj = {};
 
-      // date1: Appointment time
+    
       const date1 = new Date(item.AppointmentDate);
 
-      // date2: Current date
       const date2 = new Date();
 
       obj.PatientId = item.PatientId;
@@ -215,10 +214,10 @@ router.get(
       result.forEach((data) => {
         const obj = {};
 
-        // date1: Appointment time
+    
         const date1 = new Date(data.AppointmentDate);
 
-        // date2: Setting same appointment time to all appointments of same day
+
         const date2 = new Date(date1.getTime() - (date1.getTime() % 86400000));
 
         obj.AppointmentDate = date2;
@@ -312,9 +311,7 @@ router.get('/patienthome/:patientid/edit', isAuthorizedPatient, (req, res) => {
   });
 });
 
-// POST ROUTES
 
-// Patient Login
 router.post(
   '/patientlogin',
   passport.authenticate('patientlocal', {
@@ -348,9 +345,7 @@ router.post('/patientregistration', (req, res) => {
   });
 });
 
-// UPDATE ROUTES
 
-// Update Patient Credentials
 router.put('/patienthome/:patientid/edit', isAuthorizedPatient, (req, res) => {
   Patient.findByIdAndUpdate(req.params.patientid, req.body, (err, item) => {
     if (err) {
@@ -363,7 +358,6 @@ router.put('/patienthome/:patientid/edit', isAuthorizedPatient, (req, res) => {
   });
 });
 
-// Booking Ambulance
 router.post(
   '/patienthome/:patientid/bookambulance',
   isAuthorizedPatient,
