@@ -208,9 +208,6 @@ router.get('/doctorhome/:doctorid/edit', isAuthorizedDoctor, (req, res) => {
   });
 });
 
-// POST ROUTES
-
-// Doctor Login
 router.post(
   '/doctorlogin',
   passport.authenticate('doctorlocal', {
@@ -244,9 +241,7 @@ router.post('/doctorregistration', (req, res) => {
   });
 });
 
-// UPDATE ROUTES
 
-// Update Doctor Credentials
 router.put('/doctorhome/:id/edit', isLoggedIn, (req, res) => {
   Doctor.findByIdAndUpdate(req.params.id, req.body, (err, item) => {
     if (err) {

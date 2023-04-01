@@ -1,7 +1,7 @@
 const LocalStrategy = require('passport-local');
 const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
-const passport = require('passport');//Express-compatible authentication middleware for Node.js
+const passport = require('passport');
 const mongoose = require('mongoose');
 const express = require('express');
 const session = require('cookie-session');
@@ -42,7 +42,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true, useNewUrlParser: true }));
 app.use(methodOverride('_method'));
 
-//  PASSPORT CONFIGURATION //
 app.use(
   session({
     secret: 'AlX portifolio project',

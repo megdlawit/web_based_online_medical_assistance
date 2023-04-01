@@ -179,7 +179,6 @@ router.put(
   }
 );
 
-// POST ROUTES
 
 // Ambulance Login
 router.post(
