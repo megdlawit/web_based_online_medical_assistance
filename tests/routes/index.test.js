@@ -62,6 +62,11 @@ describe('Index routes test', () => {
     expect(response.status).toBe(200);
   });
 
+  it('tests the /nearby route status code', async () => {
+    const response = await supertest(app).get('/nearby');
+    expect(response.status).toBe(200);
+  });
+
   it('tests the /view2 route status code', async () => {
     const response = await supertest(app).get('/view2');
     expect(response.status).toBe(200);
