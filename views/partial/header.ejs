@@ -52,25 +52,7 @@
         </div>
 
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownAmbulance" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          AMBULANCE SERVICE
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownAmbulance">
-          <% if (data.user==undefined){ %>
-            <a class="dropdown-item" href="/ambulanceregistration">REGISTRATION </a>
-            <a class="dropdown-item" href="/ambulancelogin">LOGIN</a>
-            <% } else if(data.user.usertype=="AmbulanceProvider" ) { %>
-              <a class="dropdown-item" href="/ambulancehome">AMBULANCE SERVICE HOME</a>
-              <a class="dropdown-item" href="/logout">LOGOUT</a>
-              <% } else { %>
-                <a class="dropdown-item" href="/ambulanceregistration">REGISTRATION </a>
-                <a class="dropdown-item" href="/ambulancelogin">LOGIN</a>
-                <% } %>
-        </div>
 
-      </li>
       <li class="nav-item">
         <a class="nav-link" href="/faq">FAQ</a>
       </li>
